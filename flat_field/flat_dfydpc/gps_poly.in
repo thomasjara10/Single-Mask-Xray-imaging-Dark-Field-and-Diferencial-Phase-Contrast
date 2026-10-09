@@ -1,0 +1,14 @@
+/gps/particle gamma
+/gps/ene/type User
+/gps/hist/type energy
+
+/gps/pos/type Beam
+/gps/pos/shape Circle
+/gps/pos/sigma_r 5.15453 um
+/gps/pos/centre 0 0. -85 cm
+
+/gps/ang/type iso
+/gps/ang/maxtheta 0.010 rad
+/gps/ang/rot1 -1 0 0
+
+/control/execute ../spectra/28kV_RhFilter.in

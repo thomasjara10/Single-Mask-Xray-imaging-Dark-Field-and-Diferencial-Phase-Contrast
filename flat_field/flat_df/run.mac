@@ -1,0 +1,19 @@
+/run/numberOfThreads 4
+/control/verbose 0
+/control/saveHistory
+/run/verbose 0
+
+# ===========================================
+# Source energy mode:
+/control/execute gps_mono.in
+# /control/execute gps_poly.in
+# ===========================================
+
+/control/execute detmask_config.in
+/Pepi/cont/loadConfig geometry_config.in
+
+/Pepi/cont/setBaseName PCI_
+/Pepi/cont/setCustomName frame_01
+
+/run/initialize
+/Pepi/cont/beamOn 100000000

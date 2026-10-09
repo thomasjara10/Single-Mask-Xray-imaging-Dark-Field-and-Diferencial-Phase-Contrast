@@ -1,0 +1,30 @@
+/Pepi/det/setBidimensional true
+
+# Setup configuration:
+/Pepi/det/setSourcePosZ -85 cm
+/Pepi/det/setSrcObjDistance 60 cm
+/Pepi/det/setObjectDetDistance 60 cm
+
+# Mask configuration - Use the M2 data as the way in which you want the detector to be illuminated by the pre-sample mask
+/Pepi/det/setMaskThickness 100 um
+/Pepi/det/setM2Pitch 55 um
+/Pepi/det/setM2Aperture 20.0 um
+
+# Configuration for Computed Tomography simulations:
+/Pepi/det/setRotAngle 0 deg
+
+# Single-mask simulation confirmation: (singlemask: Our Edge Illumination, doublemask: Normal Edge Illumination, conventional: Inline) 
+/Pepi/det/setAcquisitionType singlemask
+
+# How many energy thresholds will be recorded: NCOL, with N = 0 a detection of all energies only.
+/Pepi/det/setDetType 0COL
+
+# Energy thresholds;
+/Pepi/det/setThreshold1 5.0 keV
+/Pepi/det/setThreshold2 0.5 keV
+/Pepi/det/setThreshold3 0.5 keV
+/Pepi/det/setThreshold4 0.5 keV
+/Pepi/det/setThreshold5 0.5 keV
+/Pepi/det/setThreshold6 0.5 keV
+/Pepi/det/setThreshold7 0.5 keV
+/Pepi/det/setThreshold8 0.5 keV
